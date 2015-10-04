@@ -1,16 +1,8 @@
 body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   min-height: 500px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-}
-
-h1 {
-  font-size: 70px;
-  font-family: $primary-font;
-  color: $primary-color;
-  letter-spacing: 2px;
 }
 
 button, input {
@@ -19,129 +11,56 @@ button, input {
   }
 }
 
-a {
-  figure {
-    height: 20vh;
-    width: 100vw;
-    box-sizing: border-box;
-    margin: 0;
+.top-route {
+  width: 100%;
+  height: 100%;
 
-    .icon {
-      width: 20vh;
-      height: 20vh;
-      display: inline-block;
-      float: left;   
-      text-align: center;
-      transition: $hover-duration all $easing;
-
-      img {
-        height: 10vh;
-        width: 10vh;
-        margin: 5vh;     
-      }
-    }
-
-    .heading {
-      width: calc(100vw - 20vh);
-      height: 20vh;
-      display: inline-block;
-      float: left;   
-      transition: $hover-duration all $easing;
-      transform: rotateX(90deg);
-      opacity: 0;
-      text-align: center;
-      transform-origin: left top;
-
-      h1 {
-        font-size: 90px;
-        transform-origin: bottom center;
-        transition: $hover-duration all $easing;
-        color: $alt-color;
-        position: relative;
-        top: 50%;
-        margin-bottom: 0;
-        transform: translateY(-50%);
-        text-shadow: 4px 4px black;
-      }
-    }
-
-    &:hover {
-
-      .icon {
-        transform: scale(0.9);
-      }
-
-      .heading {
-        transform: rotateX(0deg);
-        opacity: 1;
-      }
-    }
-  }
-
-  &.active {
-    .icon {
-      box-shadow: inset 0 0 80px $black;
-      background-color: $alt-color;
-    }
-    figure {
-      .heading {
-        transform: rotateX(0deg);
-        width: 5vh;
-        opacity: 1;
-
-        h1 {
-          transform: translateY(-50%) rotateZ(-68deg) scale(0.4);
-          color: $alt-color;
-        }
-      }
-    } 
-  }
 }
 
-button {
-  font-family: Arial Black;
-  border-radius: 2px;
-
-  &.contact-us-button {
-    right: 10px;
-    bottom: 10px;
-    position: fixed;
-    z-index: 3;
-    padding: 24px;
-  }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-nav {
-  background-color: $primary-color;
-  height: 80vh;
-  width: 20vh;
-  display: inline-block;
-  float: left;
-}
-
-header {
-  background-color: $primary-color;
-  height: 20vh;
-  font-family: $primary-font;
-  color: $secondary-color;
-  display: table-cell;
-  width: 100vw;
-  vertical-align: middle;
-  font-size: 24px;
-  text-shadow: 5px 5px black;
-  letter-spacing: 2px;
-  padding-left: $standard-bumper;
-  text-transform: uppercase;
+.main-video.background-video {
+  position: absolute;
+  top: -28px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 28px);
+  z-index: -1;
 }
 
 section {
-  background-image: url(http://api.thumbr.it/whitenoise-300x300.png?background=ffffff00&noise=483D8B&density=1&opacity=100);
-  height: 80vh;
+  //background-image: url(http://api.thumbr.it/whitenoise-300x300.png?background=ffffff00&noise=483D8B&density=1&opacity=100);
+  height: 100vh;
   display: inline-block;
   float: left;
-  width: calc(100vw - 20vh);
+  width: calc(100vw - 25vh);
   overflow: scroll;
-  padding: $standard-bumper;
-  padding-left: $standard-bumper *2;
   box-sizing: border-box;
+
+  .video-overlay {
+    background-color: $primary-color;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  .heading {
+    margin-top: 40px;
+    margin-left: 40px;
+    border-bottom: 3px solid white;
+    display: inline-block;
+
+    .copy {
+      color: $white; 
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  }
 }

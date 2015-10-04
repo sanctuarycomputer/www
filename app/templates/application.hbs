@@ -1,26 +1,16 @@
-<header class="top">Sanctuary Computer Inc</header>
-<nav>
-  {{#link-to 'about'}}
-    <figure>
-      <div class='icon'>
-        <img src='/images/stack.svg' />
-      </div>
-      <div class='heading'><h1>About</h1></div>
-    </figure>
-  {{/link-to}}
-  {{#link-to 'home'}}
-    <figure>
-      <div class='icon'>
-        <img src='/images/battery.svg' />
-      </div>
-      <div class='heading'><h1>Clients</h1></div>
-    </figure>
-  {{/link-to}}
-  <figure></figure>
-  <figure></figure>
-</nav>
+{{background-video class="main-video" 
+                   path="/videos/swirl"
+                   onLoadAction="mainVideoDidLoad"}}
+
+{{nav-bar}}
+{{loader-panel}}
+
 <section>
+  <div class='video-overlay'></div>
+
+  <div class='heading'>
+    <h2 class="copy">{{sanctuary.prefix}}Sanctuary Computer, Inc.</h2>
+  </div>
+  
   {{outlet}}
-  <button class="contact-us-button" {{action 'toggleContactUs'}}>{{if showContactPanel 'Close' 'Contact Us'}}</button>
-  {{contact-us active=showContactPanel}}
 </section>

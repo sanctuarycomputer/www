@@ -1,6 +1,14 @@
 @import 'normalize';
 
-@import 'global/variables.scss';
-@import 'global/styleguide.scss';
+@import 'global/variables';
+@import 'global/styleguide';
+@import 'global/typography';
 
-@import 'components/contact-us.scss';
+@import 'routes/home';
+
+@import 'components/loader-panel';
+@import 'components/goo-loader';
+@import 'components/nav-item';
+@import 'components/nav-bar';
+@import 'components/content-card';
+@import 'components/background-video';

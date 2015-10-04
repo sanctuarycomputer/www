@@ -1,20 +1,14 @@
-$primary-color: darkslateblue;
-
-// darkblue darkslateblue indigo mediumdblue midnightblue royalblue navy slateblue
-$alt-color: mediumspringgreen;
-// mediumspringgreen
-$secondary-color: white;
-
-$black: black;
-
-$primary-font: Arial Black, sans-serif;
+$primary-color: #1C144E;
+$alt-color: #F9684C;
+$secondary-color: #27DD95;
+$black: #000;
+$white: #fff;
 
 $break1: 980px;
 $break2: 500px;
-//30px
 
 $mini-bumper: 10px;
 $standard-bumper: 5vh;
 
-$hover-duration: 550ms;
+$hover-duration: 350ms;
 $easing: cubic-bezier(0.4,0,0.2,1);

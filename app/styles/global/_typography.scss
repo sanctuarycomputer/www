@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+$primary-font: Karla, sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: $primary-font;
+  color: $primary-color;
+}
+
+h1 {
+  font-size: 74px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+

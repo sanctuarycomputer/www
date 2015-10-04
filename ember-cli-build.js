@@ -6,6 +6,10 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('vendor/TweenMax.min.js');
+  app.import('bower_components/dynamics.js/lib/dynamics.js');
+  app.import('vendor/covervid.js');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

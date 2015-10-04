@@ -1,0 +1,29 @@
+.nav-item {
+  a {
+    figure {
+      height: 25vh;
+      box-sizing: border-box;
+      margin: 0;
+
+      .icon {
+        width: 25vh;
+        height: 25vh;
+        display: inline-block;
+        background-color: $primary-color;
+        transition: $hover-duration all $easing;
+
+        img {
+          height: 8vh;
+          width: 8vh;
+          margin: 8.5vh;  
+        }
+      }
+    }
+
+    &:hover {
+      .icon {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

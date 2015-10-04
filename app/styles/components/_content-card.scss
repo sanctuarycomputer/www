@@ -1,0 +1,39 @@
+.content-card {
+  cursor: pointer;
+  flex-grow: 1;
+  min-width: 300px;
+
+  &:hover {
+    .card-inner .image img.pixel {
+      opacity: 0.6; 
+    } 
+  }
+
+  .card-inner {
+    margin: 20px;
+
+    .image {
+      opacity: 0.8;
+      width: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      img.pixel {
+        display: block;
+        background-color: $primary-color;
+        width: 100%; 
+        opacity: 0;
+        transition: $hover-duration opacity $easing;
+      }
+    }
+
+    .copy {
+      padding: 10px;
+      background-color: $white;
+      height: 60px;
+      overflow: hidden;
+    }
+  }
+
+}

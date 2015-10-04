@@ -1,11 +1,10 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  showContactPanel: false,
+const {
+  inject,
+  Controller
+} = Ember;
 
-  actions: {
-    toggleContactUs() {
-      this.toggleProperty('showContactPanel');
-    } 
-  }
+export default Ember.Controller.extend({
+  sanctuary: inject.service()
 });
