@@ -1,0 +1,8 @@
+section > .liquid-container .liquid-child {
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform-style: preserve-3d;
+  padding-top: 80px;
+  box-sizing: border-box;
+}

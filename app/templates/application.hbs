@@ -1,16 +1,18 @@
-{{background-video class="main-video" 
-                   path="/videos/swirl"
-                   onLoadAction="mainVideoDidLoad"}}
+<div id='application' class={{sanctuary.section}}>
+  {{background-video class="main-video" 
+                    path="/videos/swirl"
+                    onLoadAction="mainVideoDidLoad"}}
 
-{{nav-bar}}
-{{loader-panel}}
+  {{nav-bar}}
+  {{!loader-panel}}
 
-<section>
-  <div class='video-overlay'></div>
+  <section>
+    <div class='video-overlay'></div>
 
-  <div class='heading'>
-    <h2 class="copy">{{sanctuary.prefix}}Sanctuary Computer, Inc.</h2>
-  </div>
-  
-  {{outlet}}
-</section>
+    <div class='heading'>
+      <h2 class="copy">{{liquid-bind sanctuary.prefix}} <span>Sanctuary Computer, Inc.</span></h2>
+    </div>
+    
+    {{liquid-outlet}}
+  </section>
+</div>

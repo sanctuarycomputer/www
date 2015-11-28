@@ -1,10 +1,7 @@
 <div class='top-route' id='products'>
   <div class='flex-container'>
-    {{content-card}}
-    {{content-card}}
-    {{content-card}}
-    {{content-card}}
-    {{content-card}}
-    {{content-card}}
+    {{#each model.products as |product|}}
+      {{product-card product=product}}
+    {{/each}}
   </div>
 </div>

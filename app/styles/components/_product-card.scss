@@ -1,0 +1,99 @@
+.product-card {
+  cursor: pointer;
+  flex-grow: 1;
+  min-width: 300px;
+  max-width: 500px;
+
+  &:hover {
+    .card-inner {
+      .image img.pixel {
+        opacity: 0.6; 
+      } 
+      .flag {
+        transform: translateX(12px);
+        opacity: 1;
+      }
+      .details {
+        transform: translateX(-12px);
+        opacity: 1;
+      }
+      .copy {
+        .text {
+          color: $secondary-color; 
+        } 
+      }
+    }
+
+  }
+
+  a {
+    text-decoration: none; 
+  }
+
+  .card-inner {
+    margin: 20px;
+
+    .details {
+      position: absolute; 
+      right: 0;
+      bottom: 0;
+      transform: translateX(4px);
+      transition: $hover-duration all $easing;
+      z-index: 999;
+      opacity: 0;
+
+      .text {
+        color: $white; 
+        font-weight: 100;
+        margin-bottom: 12px;
+      }
+    }
+    
+    .flag {
+      transition: $hover-duration all $easing;
+      position: absolute;
+      z-index: 999;
+      padding: 4px 6px;   
+      top: 12px;
+      transform: translateX(-4px);
+      background-color: $secondary-color;
+      opacity: 0;
+
+      .text {
+        margin-bottom: 0px; 
+        color: $white;
+      }
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      img.pixel {
+        display: block;
+        background-color: $primary-color;
+        width: 100%; 
+        opacity: 0;
+        transition: $hover-duration opacity $easing;
+      }
+    }
+
+    .copy {
+      padding: 10px;
+      background-color: $black;
+      height: 60px;
+      overflow: hidden;
+
+      .text {
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        color: $primary-color;
+        transition: $hover-duration color $easing;
+      }
+    }
+  }
+
+}

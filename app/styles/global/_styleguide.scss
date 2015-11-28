@@ -11,56 +11,80 @@ button, input {
   }
 }
 
-.top-route {
-  width: 100%;
-  height: 100%;
-
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-.main-video.background-video {
-  position: absolute;
-  top: -28px;
-  left: 0;
-  width: 100%;
-  height: calc(100% + 28px);
-  z-index: -1;
-}
-
-section {
-  //background-image: url(http://api.thumbr.it/whitenoise-300x300.png?background=ffffff00&noise=483D8B&density=1&opacity=100);
-  height: 100vh;
-  display: inline-block;
-  float: left;
-  width: calc(100vw - 25vh);
-  overflow: scroll;
-  box-sizing: border-box;
-
-  .video-overlay {
-    background-color: $primary-color;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    opacity: 0.85;
-    z-index: -1;
+#application {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
   }
 
-  .heading {
-    margin-top: 40px;
-    margin-left: 40px;
-    border-bottom: 3px solid white;
-    display: inline-block;
+  &.home {
+    .main-video.background-video {
+      video {
+        filter: contrast(150%);
+      }
+    }
 
-    .copy {
-      color: $white; 
-      font-weight: 100;
-      letter-spacing: 1px;
+    section .video-overlay {
+      opacity: 0; 
+    }
+  }
+
+  .main-video.background-video {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    video {
+      //filter: contrast(150%);
+      transition: $long-duration filter $easing;
+    }
+  }
+
+  section {
+    height: 100vh;
+    display: inline-block;
+    float: left;
+    width: calc(100vw - 25vh);
+    overflow: scroll;
+    box-sizing: border-box;
+
+    .video-overlay {
+      transition: $long-duration opacity $easing;
+      background-color: $primary-color;
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      opacity: 1;
+      z-index: -1;
+    }
+
+    .top-route {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    .heading {
+      position: fixed;
+      margin-top: 40px;
+      margin-left: 40px;
+      border-bottom: 3px solid white;
+      display: inline-block;
+
+      .copy {
+        color: $white; 
+        font-weight: 100;
+        letter-spacing: 1px;
+      
+        .liquid-container, span {
+          display: inline-block; 
+          vertical-align: top;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,24 @@
+<a href={{product.link}} target="_blank">
+  <div class='card-inner'>
+    <div class='image' style={{imageStyle}}>
+      <div class='flag {{product.type}}'><p class='text {{product.type}}'>{{product.type}}</p></div>
+      <div class='details text-right'>
+
+        {{#if product.builtFor}}
+        <h4 class='text'>For {{product.builtFor}}</h4>
+        {{/if}}
+
+        {{#if product.builtWith}}
+          <h4 class='text'>With {{product.builtWith}}</h4>
+        {{/if}}
+
+      </div>
+
+      <img class="pixel" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    </div>
+
+    <div class='copy text-center'>
+      <h3 class='text uppercase vertical-center'>{{product.name}}</h3>
+    </div>
+  </div>
+</a>

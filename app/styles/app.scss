@@ -2,13 +2,17 @@
 
 @import 'global/variables';
 @import 'global/styleguide';
+@import 'global/utils';
 @import 'global/typography';
 
+@import 'extensions/liquid-fire';
+
 @import 'routes/home';
+@import 'routes/products';
 
 @import 'components/loader-panel';
 @import 'components/goo-loader';
 @import 'components/nav-item';
 @import 'components/nav-bar';
-@import 'components/content-card';
+@import 'components/product-card';
 @import 'components/background-video';
