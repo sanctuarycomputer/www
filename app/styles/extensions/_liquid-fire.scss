@@ -3,6 +3,12 @@ section > .liquid-container .liquid-child {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   transform-style: preserve-3d;
-  padding-top: 80px;
+  padding-top: 120px;
   box-sizing: border-box;
+
+  @media #{$mobile-only} {
+    height: calc(100vh - 25vw);
+    padding-top: 160px;
+  }
+
 }

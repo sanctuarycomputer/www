@@ -16,15 +16,13 @@ export default Ember.Route.extend({
           name: "Eames Story",
           builtFor: "Herman Miller",
           builtWith: "Labour NY",
-          type: "Client",
-          image: "eames-story.jpg"
+          type: "Client"
         },
         {
           name: "Pick PETE",
           builtFor: "Pick Pete, Inc.",
           builtWith: "PlayLab, Inc.",
           type: "Product",
-          image: "pick-pete.jpg",
           link: "https://pickpete.com"
         },
         {
@@ -32,7 +30,6 @@ export default Ember.Route.extend({
           builtFor: "FACE Design & Fabrication",
           builtWith: "PlayLab, Inc.",
           type: "Client",
-          image: "face-site.jpg",
           link: "http://facedesign.com"
         },
         {
@@ -40,15 +37,13 @@ export default Ember.Route.extend({
           builtFor: "Rachael Yaeger",
           builtWith: "Human NYC",
           type: "Client",
-          image: "the-working-pair.jpg",
           link: "http://theworkingpair.com/"
         },
         {
-          name: "The Mainframe Group",
+          name: "Mainframe",
           builtFor: "The Mainframe Group",
           builtWith: "Jonathon O'Brien",
           type: "Client",
-          image: "the-mainframe-group.jpg",
           link: "http://www.mainframegroup.co/"
         },
         {
@@ -56,7 +51,6 @@ export default Ember.Route.extend({
           builtFor: null,
           builtWith: null,
           type: "Product",
-          image: "calendar-camp.jpg",
           link: "http://calendarcamp.co"
         },
         {
@@ -64,7 +58,6 @@ export default Ember.Route.extend({
           builtFor: "Spree Commerce & Ember CLI",
           builtWith: null,
           type: "Open Source",
-          image: "spree-ember.jpg",
           link: "http://spree-ember.com"
         },
         {
@@ -72,12 +65,50 @@ export default Ember.Route.extend({
           builtFor: "Ember CLI",
           builtWith: null,
           type: "Open Source",
-          image: "ember-infinity.jpg",
           link: "https://github.com/hhff/ember-infinity"
         }
       ],
       clients: [
-      
+        {
+          name: "PlayLab",
+          link: "http://playlab.org/"
+        },
+        {
+          name: "Herman Miller",
+          link: "http://www.hermanmiller.com/"
+        },
+        {
+          name: "Sweetgreen",
+          link: "http://sweetgreen.com/"
+        },
+        {
+          name: "Gin Lane",
+          link: "http://ginlane.com/"
+        },
+        {
+          name: "Human NYC",
+          link: "http://human-nyc.com/"
+        },
+        {
+          name: "Pick Pete",
+          link: "https://pickpete.com/"
+        },
+        {
+          name: "Labour NY",
+          link: "http://labour-ny.com/"
+        },
+        {
+          name: "Antarctic",
+          link: "http://antarcti.cc/"
+        },
+        {
+          name: "Dame Products",
+          link: "http://www.dameproducts.com/"
+        },
+        {
+          name: "FACE Design & Fabrication",
+          link: "http://www.facedesign.com/"
+        }
       ]
     } 
   },

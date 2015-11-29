@@ -1,1 +1,7 @@
-{{outlet}}
+<div class='top-route' id='clients'>
+  {{#each model.clients as |client|}}
+    <a href={{client.link}} target='_blank'>
+      <h1 class='client-link'>{{client.name}}</h1>
+    </a>
+  {{/each}}
+</div>

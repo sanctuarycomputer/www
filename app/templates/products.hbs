@@ -1,7 +1,5 @@
 <div class='top-route' id='products'>
-  <div class='flex-container'>
-    {{#each model.products as |product|}}
-      {{product-card product=product}}
-    {{/each}}
-  </div>
+  {{#each model.products as |product|}}
+    {{product-card product=product}}
+  {{/each}}
 </div>

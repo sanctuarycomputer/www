@@ -1,11 +1,22 @@
 .product-card {
   cursor: pointer;
-  flex-grow: 1;
-  min-width: 300px;
-  max-width: 500px;
+
+  @media #{$mobile-only} {
+    width: 100%; 
+  }
+
+  width: 50%;
+
+  @media #{$desktop-up} {
+    width: 33.333%;
+  }
+  
+  display: inline-block;
+  float: left;
 
   &:hover {
     .card-inner {
+      background-color: $black;
       .image img.pixel {
         opacity: 0.6; 
       } 
@@ -13,17 +24,23 @@
         transform: translateX(12px);
         opacity: 1;
       }
+      .title {
+        opacity: 1;
+        .text {
+          transform: translateY(0px);
+        }
+      }
       .details {
         transform: translateX(-12px);
         opacity: 1;
       }
       .copy {
+        background-color: $secondary-color;
         .text {
-          color: $secondary-color; 
+          color: $black; 
         } 
       }
     }
-
   }
 
   a {
@@ -31,12 +48,13 @@
   }
 
   .card-inner {
-    margin: 20px;
+    transition: $hover-duration all $easing;
+  background-image: radial-gradient(ellipse at 0% bottom, rgba(118,72,160,0.7) 0%,rgba(118,72,160,0) 60%),radial-gradient(ellipse at 90% bottom, $primary-color 0%,rgba(82,63,140,0) 40%);
 
     .details {
       position: absolute; 
       right: 0;
-      bottom: 0;
+      bottom: 0px;
       transform: translateX(4px);
       transition: $hover-duration all $easing;
       z-index: 999;
@@ -46,6 +64,27 @@
         color: $white; 
         font-weight: 100;
         margin-bottom: 12px;
+      }
+    }
+
+    .title {
+      transition: $hover-duration opacity $easing;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: 999;
+      opacity: 0;
+
+      .text {
+        transition: $hover-duration transform $easing;
+        transform: translateY(-8px);
+        margin: 0; 
+        font-weight: 700;
+        font-size: 44px;
+        color: $secondary-color;
+        z-index: 999;
+        text-shadow: 3px 3px $primary-color;
       }
     }
     
@@ -71,8 +110,7 @@
       background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
-
-      img.pixel {
+      .pixel {
         display: block;
         background-color: $primary-color;
         width: 100%; 
@@ -80,20 +118,5 @@
         transition: $hover-duration opacity $easing;
       }
     }
-
-    .copy {
-      padding: 10px;
-      background-color: $black;
-      height: 60px;
-      overflow: hidden;
-
-      .text {
-        letter-spacing: 1px;
-        margin-bottom: 0px;
-        color: $primary-color;
-        transition: $hover-duration color $easing;
-      }
-    }
   }
-
 }

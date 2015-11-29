@@ -5,4 +5,9 @@ nav.nav-bar {
   width: 25vh;
   display: inline-block;
   float: left;
+  
+  @media #{$mobile-only} { 
+    width: 100vw;
+    height: 25vw;
+  }
 }

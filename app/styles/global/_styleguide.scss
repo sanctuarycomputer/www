@@ -11,6 +11,10 @@ button, input {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 #application {
   .flex-container {
     display: flex;
@@ -64,14 +68,13 @@ button, input {
     }
 
     .top-route {
-      width: 100%;
       min-height: 100%;
+      margin: 20px 40px;
     }
 
     .heading {
       position: fixed;
-      margin-top: 40px;
-      margin-left: 40px;
+      margin: 40px;
       border-bottom: 3px solid white;
       display: inline-block;
 
@@ -84,6 +87,16 @@ button, input {
           display: inline-block; 
           vertical-align: top;
         }
+      }
+    }
+
+    @media #{$mobile-only} {
+      height: calc(100vh - 25vw);
+      width: 100vw;
+
+      .video-overlay {
+        height: calc(100vh - 25vw);
+        top: 25vw;
       }
     }
   }

@@ -1,4 +1,7 @@
 .nav-item {
+  display: block;
+
+
   a {
     figure {
       height: 25vh;
@@ -25,5 +28,28 @@
         transform: scale(0.9);
       }
     }
+  }
+  
+  @media #{$mobile-only} { 
+    display: inline-block;
+    float: left;
+
+    a {
+      figure {
+        height: 25vw;
+        .icon {
+          width: 25vw;
+          height: 25vw;
+
+          img {
+            height: 8vw;
+            width: 8vw;
+            margin: 8.5vw;  
+          
+          }
+        } 
+      }
+    }
+
   }
 }
