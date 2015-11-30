@@ -79,30 +79,29 @@ a {
     .heading {
       position: fixed;
       width: calc(100vw - 25vh - 80px);
-      margin: 0px 0px 40px 40px;
-      padding-top: 40px;
+      padding: 40px 40px 0px 40px;
       background-color: $primary-color;
       z-index: 999;
       transition: $long-duration background-color $easing;
       transition: 0ms all 500ms;
 
-      border-bottom: 3px solid white;
       display: inline-block;
 
       @media #{$mobile-only} {
         width: calc(100vw - 80px);
-        margin: 0px 40px 20px 40px;
-        padding-top: 20px;
+        padding: 20px 40px 0px 40px;
         .copy {
           font-size: 18px; 
         }
       }
 
       .copy {
+        border-bottom: 3px solid $white;
         color: $white; 
         font-weight: 100;
         letter-spacing: 1px;
-
+        padding-bottom: 20px;
+        margin-bottom: 0px;
       
         .liquid-container, span {
           display: inline-block; 

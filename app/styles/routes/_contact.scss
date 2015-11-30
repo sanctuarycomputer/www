@@ -18,15 +18,75 @@
     @media #{$mobile-only} {
       max-height: calc(100vh - 25vw - 300px);
     }
+
+    &.image-1 {
+      width: 80%;  
+    }
+
+    &.image-2 {
+      width: 50%;
+      margin-right: 40px;
+    }
+    
+    &.image-3 {
+      width: 90%;
+      margin-left: 10%;
+    }
+
+    &.image-4 {
+      width: 70%;
+      bottom: 50px;   
+    }
+
+    &.image-5 {
+      top: 10px;
+      width: 60%;
+      left: 50px;
+    }
+    
+    &.image-6 {
+      margin-top: -80px;
+      width: 30%;
+    }
+
+    &.image-7 {
+      width: 70%; 
+      margin-left: 2%;
+    }
+
+    &.image-8 {
+      bottom: 15px;
+      width: 35%;
+      left: 80px;   
+    }
+
+    &.image-9 {
+      width: 50%;
+      margin-left: 40%;   
+    }
+
   }
 
   button {
-    width: 100%;
+    position: relative;
+    z-index: 9;
+    font-size: 23px;
+    margin-bottom: 10px;
+
+    @media #{$mobile-only} {
+      width: 100%;
+      font-size: 13px;   
+    }
+
+    &.right {
+      float: right; 
+    }
+
     border: 0;
     color: $secondary-color;
     background-color: $primary-color;
     border: 3px solid $secondary-color;
-    padding: 20px 5px;
+    padding: 20px 20px;
     border-radius: 4px;
     font-family: $primary-font;
     font-weight: 700;

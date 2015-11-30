@@ -22,14 +22,21 @@
         }
       }
     }
-
+    
     &:hover {
       .icon {
         transform: scale(0.9);
       }
     }
+
+    &.active {
+      .icon {
+        border-radius: 999px;
+        transform: scale(0.9);
+      }
+    }
   }
-  
+
   @media #{$mobile-only} { 
     display: inline-block;
     float: left;
