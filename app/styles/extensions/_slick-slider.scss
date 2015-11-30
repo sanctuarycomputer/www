@@ -1,0 +1,42 @@
+$slick-dot-size: 22px;
+$slick-border-size: 4px;
+
+.slick-slider {
+  ul.slick-dots {
+    top: 0px; 
+    height: 40px;
+    margin: 0 !important;
+    position: relative;
+    padding-top: 20px;
+
+    li {
+      width: $slick-dot-size;
+      height: $slick-dot-size;
+      button {
+        width: $slick-dot-size;
+        height: $slick-dot-size;
+        border: $slick-border-size solid $primary-color;
+        background-color: $secondary-color;
+        border-radius: $slick-dot-size;
+        transition: $hover-duration all $easing;
+
+        &:before {
+          display: none; 
+        }
+      } 
+
+      &:hover {
+        button {
+          border: $slick-border-size solid $secondary-color;
+        } 
+      }
+
+      &.slick-active {
+        button {
+          background-color: $primary-color;
+          border: $slick-border-size solid $secondary-color;
+        }
+      }
+    }
+  }
+}

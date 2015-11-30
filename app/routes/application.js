@@ -16,7 +16,8 @@ export default Ember.Route.extend({
           name: "Eames Story",
           builtFor: "Herman Miller",
           builtWith: "Labour NY",
-          type: "Client"
+          type: "Client",
+          link: "http://herman-miller.s3-website-us-east-1.amazonaws.com/"
         },
         {
           name: "Pick PETE",

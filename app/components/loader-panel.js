@@ -1,14 +1,19 @@
 import Ember from 'ember';
 import dynamics from 'dynamics';
+import ResizeAware from 'ember-resize/mixins/resize-aware';
 
 const {
   get,
-  inject
+  set,
+  inject,
+  Component
 } = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend(ResizeAware, {
   classNames: ['loader-panel'],
   sanctuary: inject.service(),
+
+  revealed: false,
 
   didInsertElement() {
     get(this, 'sanctuary').on('applicationBecameReady', () => {
@@ -17,9 +22,7 @@ export default Ember.Component.extend({
     });
   },
 
-  show(bool=true) {
-    let element = this.$().get(0);
-
+  _animateTo(value=0, element) {
     let options = {
       type: dynamics.gravity,
       duration: 1800,
@@ -28,8 +31,16 @@ export default Ember.Component.extend({
     };
     
     dynamics.animate(element, {
-      translateY: bool ? 0 : element.offsetHeight,
+      translateY: value,
       translateZ: 0
     }, options);
+  },
+
+  show(bool=true) {
+    set(this, 'revealed', bool);
+
+    let element = this.$().get(0);
+    let animateToHeight = bool ? 0 : element.offsetHeight;
+    this._animateTo(animateToHeight, element);
   }
 });

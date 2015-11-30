@@ -6,10 +6,12 @@
 @import 'global/typography';
 
 @import 'extensions/liquid-fire';
+@import 'extensions/slick-slider';
 
 @import 'routes/home';
 @import 'routes/products';
 @import 'routes/clients';
+@import 'routes/contact';
 
 @import 'components/loader-panel';
 @import 'components/goo-loader';

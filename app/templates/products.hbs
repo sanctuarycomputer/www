@@ -1,5 +1,16 @@
 <div class='top-route' id='products'>
-  {{#each model.products as |product|}}
-    {{product-card product=product}}
-  {{/each}}
+  <div class='medium-up'>
+    {{#each model.products as |product|}}
+      {{product-card product=product}}
+    {{/each}}
+  </div>
+
+  <div class='small-only'>
+    {{#slick-slider autoplay=true arrows=false dots=false cssEase="ease-in-out" speed=600}}
+      {{#each model.products as |product|}}
+        {{product-card product=product showDetails=true}}
+      {{/each}}
+    {{/slick-slider}}
+  </div>
+
 </div>

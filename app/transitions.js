@@ -6,8 +6,25 @@ export default function() {
 
   this.transition(
     this.fromRoute('home'),
-    this.toRoute('products'),
-    this.use('toLeft', { duration: 350, easing: 'ease-out' }),
-    this.reverse('toRight', { duration: 350, easing: 'ease-out' })
+    this.use('toLeft', { duration: 500, easing: 'ease-in-out' }),
+    this.reverse('toRight', { duration: 500, easing: 'ease-in-out' })
+  );
+  
+  this.transition(
+    this.fromRoute('products'),
+    this.use('toLeft', { duration: 500, easing: 'ease-in-out' }),
+    this.reverse('toRight', { duration: 500, easing: 'ease-in-out' })
+  );
+  
+  this.transition(
+    this.fromRoute('clients'),
+    this.use('toLeft', { duration: 500, easing: 'ease-in-out' }),
+    this.reverse('toRight', { duration: 500, easing: 'ease-in-out' })
+  );
+  
+  this.transition(
+    this.fromRoute('contact'),
+    this.use('toLeft', { duration: 500, easing: 'ease-in-out' }),
+    this.reverse('toRight', { duration: 500, easing: 'ease-in-out' })
   );
 }

@@ -5,6 +5,6 @@ const {
   Controller
 } = Ember;
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   sanctuary: inject.service()
 });

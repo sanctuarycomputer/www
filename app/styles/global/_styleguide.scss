@@ -32,6 +32,11 @@ a {
     section .video-overlay {
       opacity: 0; 
     }
+
+    section .heading {
+      background-color: transparent; 
+      transition: 0ms all;
+    }
   }
 
   .main-video.background-video {
@@ -68,20 +73,36 @@ a {
     }
 
     .top-route {
-      min-height: 100%;
       margin: 20px 40px;
     }
 
     .heading {
       position: fixed;
-      margin: 40px;
+      width: calc(100vw - 25vh - 80px);
+      margin: 0px 0px 40px 40px;
+      padding-top: 40px;
+      background-color: $primary-color;
+      z-index: 999;
+      transition: $long-duration background-color $easing;
+      transition: 0ms all 500ms;
+
       border-bottom: 3px solid white;
       display: inline-block;
+
+      @media #{$mobile-only} {
+        width: calc(100vw - 80px);
+        margin: 0px 40px 20px 40px;
+        padding-top: 20px;
+        .copy {
+          font-size: 18px; 
+        }
+      }
 
       .copy {
         color: $white; 
         font-weight: 100;
         letter-spacing: 1px;
+
       
         .liquid-container, span {
           display: inline-block; 

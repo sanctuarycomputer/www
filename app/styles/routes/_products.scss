@@ -1,4 +1,15 @@
 #products {
-  background-color: $primary-color;
-  box-shadow: 0px -30px 30px $primary-color;
+  .medium-up {
+    display: block; 
+    @media #{$mobile-only} {
+      display: none; 
+    }  
+  }
+  
+  .small-only {
+    display: none; 
+    @media #{$mobile-only} {
+      display: block; 
+    }  
+  }
 }

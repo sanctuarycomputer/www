@@ -1,0 +1,43 @@
+#contact {
+
+  .background-image {
+    @include aspect-ratio(16, 9);
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 1;
+    transition: $long-duration opacity $easing;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    &.loading {
+      opacity: 0; 
+    }
+
+    max-height: calc(100vh - 300px);
+
+    @media #{$mobile-only} {
+      max-height: calc(100vh - 25vw - 300px);
+    }
+  }
+
+  button {
+    width: 100%;
+    border: 0;
+    color: $secondary-color;
+    background-color: $primary-color;
+    border: 3px solid $secondary-color;
+    padding: 20px 5px;
+    border-radius: 4px;
+    font-family: $primary-font;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+
+    transition: all $hover-duration $easing;
+    &:hover {
+      color: $primary-color;
+      background-color: $secondary-color;
+      border: 3px solid transparent;
+    }
+  }
+}
