@@ -5,6 +5,7 @@ section > .liquid-container .liquid-child {
   transform-style: preserve-3d;
   padding-top: 120px;
   box-sizing: border-box;
+  visibility: hidden;
 
   @media #{$mobile-only} {
     height: calc(100vh - 25vw);
