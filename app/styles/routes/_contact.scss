@@ -1,5 +1,4 @@
 #contact {
-   -webkit-overflow-scrolling: touch;
 
   .background-image {
     @include aspect-ratio(16, 9);
@@ -12,6 +11,10 @@
 
     &.loading {
       opacity: 0; 
+    }
+
+    &.image-full {
+      margin-bottom: 30px; 
     }
 
     &.image-1 {

@@ -10,15 +10,20 @@ const {
 export default Component.extend({
   tagName: 'nav',
   classNames: ['nav-bar'],
-  classNameBindings: ['loaded'],
+  classNameBindings: ['loaded', 'transition'],
 
   sanctuary: inject.service(),
 
   loaded: false,
+  transition: true,
 
   didInsertElement() {
     get(this, 'sanctuary').on('applicationBecameReady', () => {
       set(this, 'loaded', true);
+
+      window.setTimeout(() => {
+        set(this, 'transition', false);
+      }, 3600);
     });
   }
 });

@@ -16,7 +16,10 @@ nav.nav-bar {
   }
 
   &.loaded {
-    transition: $long-duration all $easing $long-duration*2;
     transform: translateX(0%);
+  }
+  
+  &.transition {
+    transition: $long-duration all $easing $long-duration*2;
   }
 }

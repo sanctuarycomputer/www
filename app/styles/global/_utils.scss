@@ -1,3 +1,17 @@
+.medium-up {
+  display: block; 
+  @media #{$mobile-only} {
+    display: none; 
+  }  
+}
+
+.small-only {
+  display: none; 
+  @media #{$mobile-only} {
+    display: block; 
+  }  
+}
+
 .text-center {
   text-align: center;
 }
