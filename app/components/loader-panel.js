@@ -17,7 +17,6 @@ export default Component.extend(ResizeAware, {
 
   didInsertElement() {
     get(this, 'sanctuary').on('applicationBecameReady', () => {
-      console.log('loader panel became ready');
       this.show(false);
     });
   },
@@ -38,7 +37,7 @@ export default Component.extend(ResizeAware, {
 
   show(bool=true) {
     set(this, 'revealed', bool);
-
+    
     let element = this.$().get(0);
     let animateToHeight = bool ? 0 : element.offsetHeight;
     this._animateTo(animateToHeight, element);

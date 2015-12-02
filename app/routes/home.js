@@ -12,7 +12,6 @@ export default Route.extend({
 
   activate() {
     let sanctuary = get(this, 'sanctuary');
-    set(sanctuary, 'prefix', '');
     set(sanctuary, 'section', 'home');
   }
 });

@@ -1,4 +1,6 @@
 #clients {
+  -webkit-overflow-scrolling: touch;
+
   a {
     .client-link {
       display: inline-block;
@@ -8,7 +10,7 @@
       border-bottom: 5px solid transparent;
       transition: $hover-duration all $easing;
       margin-right: 40px;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       
       @media #{$mobile-only} {
         font-size: 44px;

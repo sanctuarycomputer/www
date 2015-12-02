@@ -5,8 +5,4 @@
   height: 100%;
   background-color: $primary-color;
   background-image: radial-gradient(ellipse at 0% bottom, rgba(118,72,160,0.7) 0%,rgba(118,72,160,0) 60%),radial-gradient(ellipse at 90% bottom, $primary-color 0%,rgba(82,63,140,0) 40%);
-
-  @media #{$mobile-only} {
-    display: none;
-  }
 }

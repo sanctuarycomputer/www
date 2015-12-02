@@ -1,4 +1,5 @@
 #contact {
+   -webkit-overflow-scrolling: touch;
 
   .background-image {
     @include aspect-ratio(16, 9);
@@ -11,12 +12,6 @@
 
     &.loading {
       opacity: 0; 
-    }
-
-    max-height: calc(100vh - 300px);
-
-    @media #{$mobile-only} {
-      max-height: calc(100vh - 25vw - 300px);
     }
 
     &.image-1 {

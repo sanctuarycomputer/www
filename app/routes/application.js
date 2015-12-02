@@ -9,6 +9,10 @@ const {
 export default Ember.Route.extend({
   sanctuary: inject.service(),
 
+  beforeModel() {
+    viewportUnitsBuggyfill.init({force: true});
+  },
+
   model() {
     return {
       products: [
@@ -116,11 +120,10 @@ export default Ember.Route.extend({
 
   actions: {
     mainVideoDidLoad() {
-      
       // TODO: Change this eventually
       window.setTimeout(() => {
         get(this, 'sanctuary').trigger('applicationBecameReady');
-      }, 8000);
+      }, 6500);
 
     } 
   }

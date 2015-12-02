@@ -29,13 +29,18 @@ a {
       }
     }
 
-    section .video-overlay {
-      opacity: 0; 
-    }
+    section {
+      .video-overlay {
+        opacity: 0; 
+      }
+      
+      .heading {
+        opacity: 0;
+      }
 
-    section .heading {
-      background-color: transparent; 
-      transition: 0ms all;
+      .top-route {
+        opacity: 0; 
+      }
     }
   }
 
@@ -74,16 +79,16 @@ a {
 
     .top-route {
       margin: 20px 40px;
+      transition: $long-duration opacity $easing;
     }
 
     .heading {
       position: fixed;
       width: calc(100vw - 25vh - 80px);
       padding: 40px 40px 0px 40px;
-      background-color: $primary-color;
       z-index: 999;
-      transition: $long-duration background-color $easing;
-      transition: 0ms all 500ms;
+      pointer-events: none;
+      transition: $hover-duration opacity $easing;
 
       display: inline-block;
 
@@ -116,7 +121,7 @@ a {
 
       .video-overlay {
         height: calc(100vh - 25vw);
-        top: 25vw;
+        content: 'viewport-units-buggyfill; height: calc(100vh - 25vw);';
       }
     }
   }

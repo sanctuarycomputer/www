@@ -5,9 +5,18 @@ nav.nav-bar {
   width: 25vh;
   display: inline-block;
   float: left;
+  position: relative;
+  transform: translateX(-100%);
   
   @media #{$mobile-only} { 
     width: 100vw;
     height: 25vw;
+    bottom: 0;
+    position: absolute;
+  }
+
+  &.loaded {
+    transition: $long-duration all $easing $long-duration*2;
+    transform: translateX(0%);
   }
 }

@@ -13,34 +13,36 @@
   
   display: inline-block;
   float: left;
-
-  &:hover, &.show-details {
-    .card-inner {
-      background-color: $black;
-      .background-image img.pixel {
-        opacity: 0.6; 
-      } 
-      .flag {
-        transform: translateX(12px);
-        opacity: 1;
-      }
-      .title {
-        transition: $hover-duration opacity $easing $hover-duration/2;
-        opacity: 1;
-        .text {
-          transition: $hover-duration transform $easing $hover-duration/2;
-          transform: translateY(0px);
-        }
-      }
-      .details {
-        transform: translateX(-12px);
-        opacity: 1;
-      }
-      .copy {
-        background-color: $secondary-color;
-        .text {
-          color: $black; 
+  
+  &:not(.is-touch) {
+    &:hover {
+      .card-inner {
+        background-color: $black;
+        .background-image img.pixel {
+          opacity: 0.6; 
         } 
+        .flag {
+          transform: translateX(12px);
+          opacity: 1;
+        }
+        .title {
+          transition: $hover-duration opacity $easing $hover-duration/2;
+          opacity: 1;
+          .text {
+            transition: $hover-duration transform $easing $hover-duration/2;
+            transform: translateY(0px);
+          }
+        }
+        .details {
+          transform: translateX(-12px);
+          opacity: 1;
+        }
+        .copy {
+          background-color: $secondary-color;
+          .text {
+            color: $black; 
+          } 
+        }
       }
     }
   }
