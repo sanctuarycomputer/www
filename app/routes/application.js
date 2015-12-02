@@ -21,10 +21,10 @@ export default Ember.Route.extend({
           builtFor: "Herman Miller",
           builtWith: "Labour NY",
           type: "Client",
-          link: "http://www.hermanmiller.com/support-pages/serious-fun.html"
+          link: "http://www.hermanmiller.com/why/serious-fun.html"
         },
         {
-          name: "Pick PETE",
+          name: "Pick Pete",
           builtFor: "Pick Pete, Inc.",
           builtWith: "PlayLab, Inc.",
           type: "Product",
