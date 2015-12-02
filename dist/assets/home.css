@@ -574,14 +574,12 @@ section > .liquid-container .liquid-child {
       width: 90%;
       margin-left: 10%; }
     #contact .background-image.image-4 {
-      width: 70%;
-      bottom: 50px; }
+      width: 70%; }
     #contact .background-image.image-5 {
       top: 10px;
       width: 60%;
       left: 50px; }
     #contact .background-image.image-6 {
-      margin-top: -80px;
       width: 30%; }
     #contact .background-image.image-7 {
       width: 70%;
@@ -597,7 +595,7 @@ section > .liquid-container .liquid-child {
     position: relative;
     z-index: 9;
     font-size: 23px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border: 0;
     color: #27DD95;
     background-color: #1C144E;

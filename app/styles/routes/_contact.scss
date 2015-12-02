@@ -30,7 +30,6 @@
 
     &.image-4 {
       width: 70%;
-      bottom: 50px;   
     }
 
     &.image-5 {
@@ -40,7 +39,6 @@
     }
     
     &.image-6 {
-      margin-top: -80px;
       width: 30%;
     }
 
@@ -66,7 +64,7 @@
     position: relative;
     z-index: 9;
     font-size: 23px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     @media #{$mobile-only} {
       width: 100%;

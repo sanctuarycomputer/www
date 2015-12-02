@@ -4148,7 +4148,7 @@ define('home/templates/contact', ['exports'], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 20,
+            "line": 22,
             "column": 0
           }
         },
@@ -4212,6 +4212,14 @@ define('home/templates/contact', ['exports'], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
         var el2 = dom.createElement("a");
         dom.setAttribute(el2,"href","mailto:hello@sanctuary.computer?Subject=Let%27s%20work%20together%21");
         dom.setAttribute(el2,"target","_blank");
@@ -4241,14 +4249,16 @@ define('home/templates/contact', ['exports'], function (exports) {
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element0 = dom.childAt(fragment, [0]);
-        var morphs = new Array(7);
+        var morphs = new Array(9);
         morphs[0] = dom.createMorphAt(element0,1,1);
         morphs[1] = dom.createMorphAt(element0,5,5);
         morphs[2] = dom.createMorphAt(element0,7,7);
         morphs[3] = dom.createMorphAt(element0,9,9);
         morphs[4] = dom.createMorphAt(element0,13,13);
-        morphs[5] = dom.createMorphAt(element0,17,17);
-        morphs[6] = dom.createMorphAt(element0,19,19);
+        morphs[5] = dom.createMorphAt(element0,15,15);
+        morphs[6] = dom.createMorphAt(element0,17,17);
+        morphs[7] = dom.createMorphAt(element0,21,21);
+        morphs[8] = dom.createMorphAt(element0,23,23);
         return morphs;
       },
       statements: [
@@ -4257,8 +4267,10 @@ define('home/templates/contact', ['exports'], function (exports) {
         ["inline","background-image",[],["class","image-2","src","/images/contact/contact-2.jpg"],["loc",[null,[7,2],[7,74]]]],
         ["inline","background-image",[],["class","image-3","src","/images/contact/contact-3.jpg"],["loc",[null,[8,2],[8,74]]]],
         ["inline","background-image",[],["class","image-4","src","/images/contact/contact-4.jpg"],["loc",[null,[12,2],[12,74]]]],
-        ["inline","background-image",[],["class","image-7","src","/images/contact/contact-7.jpg"],["loc",[null,[16,2],[16,74]]]],
-        ["inline","background-image",[],["class","image-9","src","/images/contact/contact-9.jpg"],["loc",[null,[17,2],[17,74]]]]
+        ["inline","background-image",[],["class","image-6","src","/images/contact/contact-6.jpg"],["loc",[null,[13,2],[13,74]]]],
+        ["inline","background-image",[],["class","image-8","src","/images/contact/contact-8.jpg"],["loc",[null,[14,2],[14,74]]]],
+        ["inline","background-image",[],["class","image-7","src","/images/contact/contact-7.jpg"],["loc",[null,[18,2],[18,74]]]],
+        ["inline","background-image",[],["class","image-9","src","/images/contact/contact-9.jpg"],["loc",[null,[19,2],[19,74]]]]
       ],
       locals: [],
       templates: []
