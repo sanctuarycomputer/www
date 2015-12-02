@@ -26,7 +26,10 @@ export default Component.extend(ResizeAware, {
       type: dynamics.gravity,
       duration: 1800,
       bounciness: 800,
-      elasticity: 50
+      elasticity: 50,
+      complete: () => {
+        this.destroy();
+      }
     };
     
     dynamics.animate(element, {
