@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import aframe from 'npm:aframe';
 
 const {
   get,
@@ -11,6 +12,7 @@ export default Ember.Route.extend({
 
   beforeModel() {
     viewportUnitsBuggyfill.init({force: true});
+    console.log(aframe);
   },
 
   model() {
