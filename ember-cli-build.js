@@ -13,7 +13,7 @@ module.exports = function(defaults) {
   app.import('bower_components/dynamics.js/lib/dynamics.js');
   app.import('vendor/covervid.js');
   app.import('bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js');
-  app.import('bower_components/inobounce/inobounce.js');
+  app.import('vendor/inobounce.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
