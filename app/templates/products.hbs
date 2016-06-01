@@ -8,35 +8,41 @@
       <img id="working-pair" src="./images/products/the-working-pair.jpg">
       <img id="main-frame" src="./images/products/mainframe.jpg">
       <img id="calendar-camp" src="./images/products/calendar-camp.jpg">
+      <img id="dame-products" src="./images/products/dame-products.jpg">
     </a-assets>
+
+    <a-box src="#dame-products"
+            position="0 1 5"
+            target="_blank"
+            href="https://www.dameproducts.com/"></a-box>
     
     <a-box src="#pick-pete"
-            position="0 1 -1"
+            position="-3 -2 5"
             target="_blank"
             href="https://pickpete.com/"></a-box>
 
     <a-box src="#herman-miller"
-            position="-5 0 1"
+            position="4 0 1"
             target="_blank"
             href="http://www.hermanmiller.com/why/serious-fun.html"></a-box>
 
-    <a-box src="#face-design"
-            position="5 0 4"
-            target="_blank"
-            href="http://www.facedesign.com/"></a-box>
-
     <a-box src="#working-pair"
-            position="0 5 0"
+            position="-1 -1 0"
             target="_blank"
             href="http://theworkingpair.com/"></a-box>
 
-    <a-box src="#main-frame"
-            position="0 -5 2"
+    <a-box src="#face-design"
+            position="5 -2 -2"
             target="_blank"
-            href="http://www.mainframegroup.co/"></a-box>
+            href="http://www.facedesign.com/"></a-box>
+
+    <a-box src="#main-frame"
+            position="0 -3 -4"
+            target="_blank"
+            href="http://www.mainframegroup.co/"></a-box>  
 
     <a-box src="#calendar-camp"
-            position="5 -5 0"
+            position="5 -5 -5"
             target="_blank"
             href="http://www.calendarcamp.co/"></a-box>
 
@@ -45,10 +51,10 @@
                  position="0 0 -3"
                  material="color: cyan; shader: flat"
                  cursor="maxDistance: 30; fuse: true">
-                 <a-animation begin="click" easing="ease-in" attribute="scale"
-                   fill="backwards" from="2 2 2" to="1 1 1" dur="150"></a-animation>
+                 <a-animation begin="click" easing="ease-in" attribute="scale"               
+                   fill="forward" from="1 1 1" to="2 2 2" dur="150"></a-animation>
                  <a-animation begin="fusing" easing="ease-in" attribute="scale"
-                   fill="forwards" from="1 1 1" to="2 2 2" dur="200"></a-animation>
+                   fill="backwards" from="1 1 1" to="2 2 2" dur="200"></a-animation>
                </a-ring>
     </a-camera>
   </a-scene>

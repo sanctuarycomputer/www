@@ -133,7 +133,7 @@ export default Ember.Component.extend({
           TweenMax.set($obj,{
             x:Math.cos(circle.angle)*circle.radius,
             y:Math.sin(circle.angle)*circle.radius,
-          })
+          });
           requestAnimationFrame(updateCirclePos);
         }
         updateCirclePos();

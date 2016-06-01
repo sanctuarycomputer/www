@@ -4,7 +4,6 @@ const {
   get,
   computed,
   String,
-  Handlebars,
   Component
 } = Ember;
 
