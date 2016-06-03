@@ -19,6 +19,25 @@ export default Ember.Route.extend({
     return {
       products: [
         {
+          name: "Spirit Vegetable",
+          builtFor: "Dig Inn",
+          type: "Client",
+          link: "http://www.spirit.dirt.online/"
+        },
+        {
+          name: "Dirt Magazine",
+          builtFor: "Dig Inn",
+          type: "Client",
+          link: "http://www.dirt.online/"
+        },
+        {
+          name: "Dame Products",
+          builtFor: "Dame Products",
+          builtWith: "Playlab Inc.",
+          type: "Client",
+          link: "https://www.dameproducts.com/"
+        },
+        {
           name: "Eames Story",
           builtFor: "Herman Miller",
           builtWith: "Labour NY",
