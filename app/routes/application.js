@@ -21,12 +21,14 @@ export default Ember.Route.extend({
         {
           name: "Spirit Vegetable",
           builtFor: "Dig Inn",
+          builtWith: null,
           type: "Client",
           link: "http://www.spirit.dirt.online/"
         },
         {
           name: "Dirt Magazine",
           builtFor: "Dig Inn",
+          builtWith: null,
           type: "Client",
           link: "http://www.dirt.online/"
         },
