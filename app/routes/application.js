@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import aframe from 'npm:aframe';
+import aframeHrefComponent from 'npm:aframe-href-component';
 
 const {
   get,
@@ -13,6 +14,7 @@ export default Ember.Route.extend({
   beforeModel() {
     viewportUnitsBuggyfill.init({force: true});
     console.log(aframe);
+    console.log(aframeHrefComponent);
   },
 
   model() {
