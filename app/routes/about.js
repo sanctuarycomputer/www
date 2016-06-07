@@ -12,7 +12,7 @@ export default Route.extend({
 
   activate() {
     let sanctuary = get(this, 'sanctuary');
-    set(sanctuary, 'prefix', 'Contact people at ');
-    set(sanctuary, 'section', 'contact');
+    set(sanctuary, 'prefix', 'About');
+    set(sanctuary, 'section', 'about');
   }
 });

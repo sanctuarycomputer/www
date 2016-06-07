@@ -1,0 +1,62 @@
+#about {
+
+  .about-intro {
+    position: relative;
+
+    .paragraph {
+      @media #{$tablet-up} {
+        width: 50%;
+        max-width: 840px;
+      }
+      color: $white;
+      font-size: 1.5rem;
+      line-height: 1.5em;
+      letter-spacing: .02em;
+    }
+
+    .cta-container {
+      margin-top: 3rem;
+
+      @media #{$tablet-up} {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      @media #{$desktop-up} {
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+      }
+
+
+      h3 {
+        color: $white;
+        line-height: 0;
+        letter-spacing: .02em;
+      }
+    }
+
+
+  }
+
+  .mailto-link {
+    color: $secondary-color;
+    border-bottom: solid 3px $secondary-color;
+    margin: 0;
+    transition: $hover-duration $easing;
+
+    &.small {
+      width: 312px;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+
+  }
+
+
+
+}
