@@ -77,6 +77,10 @@ export default Ember.Route.extend({
       ],
       clients: [
         {
+          name: "DigInn",
+          link: "https://www.diginn.com/"
+        },
+        {
           name: "PlayLab",
           link: "http://playlab.org/"
         },
