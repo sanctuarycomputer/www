@@ -226,7 +226,7 @@
   }
 
   .contact-block {
-    padding: 350px 0;
+    padding: 350px 0 175px 0;
     text-align: center;
 
     .mailto-link {
@@ -237,6 +237,18 @@
     .social-links {
       img {
         padding: 0 10px;
+        width: 25px;
+
+        &.twitter {
+          width: 30px;
+        }
+        @media #{$tablet-up} {
+          width: 35px;
+
+          &.twitter {
+            width: 40px;
+          }
+        }
       }
     }
   }
