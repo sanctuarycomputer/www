@@ -159,22 +159,22 @@
           @include aspect-ratio(16, 9);
 
           &.image-1 {
-            width: 60%;
+            width: 80%;
             margin-top: 50px;
             margin-right: 20px;
           }
           &.image-3 {
-            width: 55%;
+            width: 75%;
             margin-top: 80px;
             margin-right: 30px;
           }
           &.image-4 {
-            width: 80%;
+            width: 90%;
             margin-top: 40px;
             margin-right: 80px;
           }
           &.image-5 {
-            width: 40%;
+            width: 60%;
             margin-top: 30px;
             margin-right: 60px;
           }
@@ -226,7 +226,7 @@
   }
 
   .contact-block {
-    padding: 350px 0 175px 0;
+    padding: 175px 0 175px 0;
     text-align: center;
 
     .mailto-link {
