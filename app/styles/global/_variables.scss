@@ -1,6 +1,7 @@
 $primary-color: #1C144E;
 $alt-color: #F9684C;
 $secondary-color: #27DD95;
+$lightgrey: #e6e6e6;
 $black: #000;
 $white: #fff;
 
@@ -15,4 +16,5 @@ $long-duration: 1200ms;
 $easing: cubic-bezier(0.4,0,0.2,1);
 
 $mobile-only: "(max-width: 800px)";
+$tablet-up: "(min-width: 800px)";
 $desktop-up: "(min-width: 1280px)";

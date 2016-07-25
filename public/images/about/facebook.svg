@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 39.9666667 40 39.9666667 40 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S-Round-3" transform="translate(-661.000000, -2776.000000)">
+            <g id="facebook-logo" transform="translate(661.000000, 2776.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M40,6.66666667 C40,3.16388889 36.8383333,0 33.3333333,0 L6.66666667,0 C3.16166667,0 0,3.16388889 0,6.66666667 L0,33.3333333 C0,36.8361111 3.16166667,40 6.66666667,40 L20,40 L20,24.8894444 L15.1105556,24.8894444 L15.1105556,18.2227778 L20,18.2227778 L20,15.625 C20,11.1455556 23.3638889,7.11166667 27.5,7.11166667 L32.8883333,7.11166667 L32.8883333,13.7783333 L27.5,13.7783333 C26.91,13.7783333 26.2216667,14.4944444 26.2216667,15.5666667 L26.2216667,18.2227778 L32.8883333,18.2227778 L32.8883333,24.8894444 L26.2216667,24.8894444 L26.2216667,40 L33.3333333,40 C36.8383333,40 40,36.8361111 40,33.3333333 L40,6.66666667 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

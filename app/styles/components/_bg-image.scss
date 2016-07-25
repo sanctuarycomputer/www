@@ -1,0 +1,24 @@
+.bg-image {
+  position: relative;
+  min-height: 1px;
+  min-width: 1px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  .fadein-placeholder {
+    transition: $hover-duration;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $lightgrey;
+    &.fade-in {
+      opacity: 0;
+    }
+  }
+}

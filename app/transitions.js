@@ -23,7 +23,7 @@ export default function() {
   );
   
   this.transition(
-    this.fromRoute('contact'),
+    this.fromRoute('about'),
     this.use('toLeft', { duration: 500, easing: 'ease-in-out' }),
     this.reverse('toRight', { duration: 500, easing: 'ease-in-out' })
   );
