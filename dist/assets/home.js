@@ -1466,7 +1466,7 @@ define('home/routes/application', ['exports', 'ember', 'npm:aframe'], function (
           link: "https://itunes.apple.com/us/app/dig-inn/id900117346?mt=8"
         }, {
           name: "Dirt Online",
-          builtFor: "DigInn",
+          builtFor: "Dig Inn",
           builtWith: null,
           type: "Client",
           link: "http://www.dirt.online/"
@@ -6550,7 +6550,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+a0a79eb9"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+10d6a5ac"});
 }
 
 /* jshint ignore:end */

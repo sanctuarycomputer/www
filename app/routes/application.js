@@ -41,7 +41,7 @@ export default Ember.Route.extend({
         },
         {
           name: "Dirt Online",
-          builtFor: "DigInn",
+          builtFor: "Dig Inn",
           builtWith: null,
           type: "Client",
           link: "http://www.dirt.online/"
