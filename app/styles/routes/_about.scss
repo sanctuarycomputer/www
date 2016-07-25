@@ -2,9 +2,10 @@
 
   .about-intro {
     position: relative;
+    max-width: 1280px;
 
     .paragraph {
-      @media #{$tablet-up} {
+      @media #{$desktop-up} {
         width: 50%;
         max-width: 840px;
       }
@@ -56,11 +57,34 @@
 
   .image-grid {
     position: relative;
-    margin-top: 350px;
+    margin-top: 270px;
+
+    .background-image {
+      position: relative;
+      min-height: 1px;
+      min-width: 1px;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      .pixel {
+        display: block;
+        background-color: $primary-color;
+        width: 100%; 
+        opacity: 0;
+        transition: $hover-duration opacity $easing;
+      }
+
+      &.loading {
+        opacity: 0; 
+      }
+    }
 
     .map {
       position: absolute;
-      width: 100%;
+      width: 105%;
       max-width: 600px;
       z-index: 1;
       top: -10%;
@@ -72,13 +96,13 @@
         @include aspect-ratio(16, 9);
 
         &.image-1 {
-          width: 100%;
+          width: 98%;
           margin-top: 50px;
           margin-right: 20px;
         }
         &.image-3 {
           width: 80%;
-          margin-top: 80px;
+          margin-top: 45px;
           margin-left: 30px;
         }
         &.image-4 {
@@ -133,10 +157,12 @@
       }
     }
 
-
+    @media #{$tablet-up} {
+      margin-top: 400px;
+    }
 
     @media #{$desktop-up} {
-      margin-top: 20%;
+      margin-top: 200px;
       display: flex;
       position: relative;
 
@@ -158,11 +184,6 @@
         .sixteen-nine {
           @include aspect-ratio(16, 9);
 
-          &.image-1 {
-            width: 80%;
-            margin-top: 50px;
-            margin-right: 20px;
-          }
           &.image-3 {
             width: 75%;
             margin-top: 80px;
@@ -182,6 +203,7 @@
       }
 
       .flex-column-2 {
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -202,7 +224,7 @@
             @include aspect-ratio(4, 4);
             
             &.image-2 {
-              width: 90%;
+              width: 75%;
             }
           }
         }
@@ -213,12 +235,11 @@
           &.image-6 {
             width: 60%;
             margin-top: 40px;
-            margin-left: -30px;
           }
 
           &.image-7 {
             width: 70%;
-            margin-top: 20px;
+            margin-top: 40px;
           }
         }
       }

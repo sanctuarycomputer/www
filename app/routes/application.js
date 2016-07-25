@@ -19,11 +19,11 @@ export default Ember.Route.extend({
     return {
       products: [
         {
-          name: "Eames Story",
-          builtFor: "Herman Miller",
-          builtWith: "Labour NY",
+          name: "Dame",
+          builtFor: "Dame Products",
+          builtWith: "PlayLab, Inc.",
           type: "Client",
-          link: "http://www.hermanmiller.com/why/serious-fun.html"
+          link: "https://www.dameproducts.com/"
         },
         {
           name: "Pick Pete",
@@ -31,6 +31,27 @@ export default Ember.Route.extend({
           builtWith: "PlayLab, Inc.",
           type: "Product",
           link: "https://pickpete.com"
+        },
+        {
+          name: "Dig Inn",
+          builtFor: "Dig Inn",
+          builtWith: "PlayLab, Inc.",
+          type: "Client",
+          link: "https://itunes.apple.com/us/app/dig-inn/id900117346?mt=8"
+        },
+        {
+          name: "Dirt Online",
+          builtFor: "DigInn",
+          builtWith: null,
+          type: "Client",
+          link: "http://www.dirt.online/"
+        },
+        {
+          name: "Spirit",
+          builtFor: "Dig Inn",
+          builtWith: null,
+          type: "Client",
+          link: "http://spirit.dirt.online/"
         },
         {
           name: "FACE Site",
@@ -77,8 +98,12 @@ export default Ember.Route.extend({
       ],
       clients: [
         {
-          name: "DigInn",
+          name: "Dig Inn",
           link: "https://www.diginn.com/"
+        },
+        {
+          name: "JWALK",
+          link: "http://www.jwalkny.com/"
         },
         {
           name: "PlayLab",
@@ -87,10 +112,6 @@ export default Ember.Route.extend({
         {
           name: "Herman Miller",
           link: "http://www.hermanmiller.com/"
-        },
-        {
-          name: "Sweetgreen",
-          link: "http://sweetgreen.com/"
         },
         {
           name: "Gin Lane",
