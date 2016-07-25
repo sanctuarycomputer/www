@@ -6550,7 +6550,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+b3d712cd"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+10d6a5ac"});
 }
 
 /* jshint ignore:end */
