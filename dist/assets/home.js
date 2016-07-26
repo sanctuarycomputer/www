@@ -1465,7 +1465,6 @@ define('home/routes/application', ['exports', 'ember', 'npm:aframe'], function (
     sanctuary: inject.service(),
 
     beforeModel: function beforeModel() {
-      viewportUnitsBuggyfill.init({ force: true });
       console.log(aframe['default']);
     },
 
@@ -5771,7 +5770,7 @@ define('home/tests/routes/application.jshint', function () {
   QUnit.module('JSHint - routes/application.js');
   QUnit.test('should pass jshint', function(assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/application.js should pass jshint.\nroutes/application.js: line 145, col 6, Missing semicolon.\nroutes/application.js: line 14, col 5, \'viewportUnitsBuggyfill\' is not defined.\nroutes/application.js: line 7, col 3, \'Route\' is defined but never used.\n\n3 errors');
+    assert.ok(false, 'routes/application.js should pass jshint.\nroutes/application.js: line 144, col 6, Missing semicolon.\nroutes/application.js: line 7, col 3, \'Route\' is defined but never used.\n\n2 errors');
   });
 
 });
@@ -6586,7 +6585,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+712d698c"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+cea85325"});
 }
 
 /* jshint ignore:end */
