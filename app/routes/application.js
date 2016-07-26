@@ -11,7 +11,6 @@ export default Ember.Route.extend({
   sanctuary: inject.service(),
 
   beforeModel() {
-    viewportUnitsBuggyfill.init({force: true});
     console.log(aframe);
   },
 
@@ -142,7 +141,7 @@ export default Ember.Route.extend({
           link: "http://www.facedesign.com/"
         }
       ]
-    } 
+    }
   },
 
   actions: {
@@ -152,6 +151,6 @@ export default Ember.Route.extend({
         get(this, 'sanctuary').trigger('applicationBecameReady');
       }, 6500);
 
-    } 
+    }
   }
 });

@@ -1087,6 +1087,31 @@ define('home/initializers/export-application-global', ['exports', 'ember', 'home
   };
 
 });
+define('home/initializers/ios-buggyfill', ['exports'], function (exports) {
+
+  'use strict';
+
+  exports.initialize = initialize;
+
+  var initialized = false;
+
+  function initialize() {
+    if (initialized) {
+      return;
+    }
+    var UA = navigator.userAgent;
+    if (UA.match(/(iPod|iPhone|iPad)/) && (!!UA.match(/Version\/[\d\.]+.*Safari/) || !!UA.match(/Twitter for iPhone/))) {
+      window.viewportUnitsBuggyfill.init({ force: true });
+    }
+    initialized = true;
+  }
+
+  exports['default'] = {
+    name: 'ios-buggyfill',
+    initialize: initialize
+  };
+
+});
 define('home/initializers/liquid-fire', ['exports', 'liquid-fire/router-dsl-ext', 'liquid-fire/ember-internals'], function (exports, __dep0__, ember_internals) {
 
   'use strict';
@@ -4698,6 +4723,17 @@ define('home/tests/helpers/start-app.jshint', function () {
   });
 
 });
+define('home/tests/initializers/ios-buggyfill.jshint', function () {
+
+  'use strict';
+
+  QUnit.module('JSHint - initializers/ios-buggyfill.js');
+  QUnit.test('should pass jshint', function(assert) {
+    assert.expect(1);
+    assert.ok(true, 'initializers/ios-buggyfill.js should pass jshint.');
+  });
+
+});
 define('home/tests/integration/components/background-video-test', ['ember-qunit'], function (ember_qunit) {
 
   'use strict';
@@ -6550,7 +6586,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+10d6a5ac"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+712d698c"});
 }
 
 /* jshint ignore:end */
