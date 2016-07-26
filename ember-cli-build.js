@@ -4,15 +4,15 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     fingerprint: {
-      enabled: false 
+      enabled: false
     }
     // Add options here
   });
 
-  app.import('vendor/TweenMax.min.js');
   app.import('bower_components/dynamics.js/lib/dynamics.js');
+  app.import('vendor/TweenMax.min.js');
   app.import('vendor/covervid.js');
-  app.import('bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js');
+  app.import('vendor/viewport-units-buggyfill.js');
   app.import('vendor/inobounce.js');
 
   // Use `app.import` to add additional libraries to the generated
