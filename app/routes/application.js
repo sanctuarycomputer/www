@@ -40,6 +40,13 @@ export default Ember.Route.extend({
           link: "https://itunes.apple.com/us/app/dig-inn/id900117346?mt=8"
         },
         {
+          name: "Eames Story",
+          builtFor: "Herman Miller",
+          builtWith: "Labour NY",
+          type: "Client",
+          link: "http://www.hermanmiller.com/why/serious-fun.html"
+        },
+        {
           name: "Dirt Online",
           builtFor: "Dig Inn",
           builtWith: null,

@@ -1465,6 +1465,12 @@ define('home/routes/application', ['exports', 'ember', 'npm:aframe'], function (
           type: "Client",
           link: "https://itunes.apple.com/us/app/dig-inn/id900117346?mt=8"
         }, {
+          name: "Eames Story",
+          builtFor: "Herman Miller",
+          builtWith: "Labour NY",
+          type: "Client",
+          link: "http://www.hermanmiller.com/why/serious-fun.html"
+        }, {
           name: "Dirt Online",
           builtFor: "Dig Inn",
           builtWith: null,
@@ -5735,7 +5741,7 @@ define('home/tests/routes/application.jshint', function () {
   QUnit.module('JSHint - routes/application.js');
   QUnit.test('should pass jshint', function(assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/application.js should pass jshint.\nroutes/application.js: line 145, col 6, Missing semicolon.\nroutes/application.js: line 14, col 5, \'viewportUnitsBuggyfill\' is not defined.\nroutes/application.js: line 7, col 3, \'Route\' is defined but never used.\n\n3 errors');
+    assert.ok(false, 'routes/application.js should pass jshint.\nroutes/application.js: line 152, col 6, Missing semicolon.\nroutes/application.js: line 14, col 5, \'viewportUnitsBuggyfill\' is not defined.\nroutes/application.js: line 7, col 3, \'Route\' is defined but never used.\n\n3 errors');
   });
 
 });
@@ -6550,7 +6556,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+10d6a5ac"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+03ed78e2"});
 }
 
 /* jshint ignore:end */
