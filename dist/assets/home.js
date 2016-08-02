@@ -6556,7 +6556,7 @@ catch(err) {
 if (runningTests) {
   require("home/tests/test-helper");
 } else {
-  require("home/app")["default"].create({"name":"home","version":"0.0.0+07b249e5"});
+  require("home/app")["default"].create({"name":"home","version":"0.0.0+03ed78e2"});
 }
 
 /* jshint ignore:end */
